@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Meine erste Seite
+                    Meine erste Laravel Seite
                 </div>
 
                 <div class="links">
