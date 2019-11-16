@@ -6,7 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                <h1 class="h1">Projekte</h1>
+                <h1 class="h1">ToDo Listen</h1>
               </div>
             </div>
             <div class="row">
@@ -63,7 +63,7 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/
