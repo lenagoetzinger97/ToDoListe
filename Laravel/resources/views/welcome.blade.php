@@ -32,17 +32,17 @@
             <div class="row">
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                  <img src="../../../Bilder/täglich.jpg" class="card-img-top" alt="KALENDER_BILD">
+                  <img src="https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2847&q=80" class="card-img-top" alt="KALENDER_BILD">
                   <div class="card-body">
                     <h5 class="card-title">Daily ToDos</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-outline-primary">zu den täglichen ToDos</a>
+                    <a href="/todos" class="btn btn-outline-primary">zu den täglichen ToDos</a>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                  <img src="../../../Bilder/arbeit.jpg" class="card-img-top" alt="LAPTOP_BILD">
+                  <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" class="card-img-top" alt="LAPTOP_BILD">
                   <div class="card-body">
                     <h5 class="card-title">Uni ToDos</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -52,11 +52,11 @@
               </div>
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                  <img src="../../../Bilder/privat.jpg" class="card-img-top" alt="STAUBSAUGER_BILD">
+                  <img src="https://images.unsplash.com/photo-1562886877-f12251816e01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80" class="card-img-top" alt="PUTZ_BILD">
                   <div class="card-body">
                     <h5 class="card-title">Private ToDos</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-outline-primary">zu den privaten ToDos</a>
+                    <a href="{{ route('todos.create') }}" class="btn btn-outline-primary">zu den privaten ToDos</a>
                   </div>
                 </div>
               </div>

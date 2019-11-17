@@ -40,7 +40,7 @@ class TodoController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'detail' => 'required',
+            'time' => 'required',  /* datail */
         ]);
 
         Todo::create($request->all());
@@ -82,7 +82,7 @@ class TodoController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'detail' => 'required',
+            'time' => 'required',  /*detail*/
         ]);
 
         $todo->update($request->all());

@@ -14,15 +14,24 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <p><strong>Name:</strong>
+                <p><strong>Aufgabe:</strong>
                 {{ $todo->name }}</p>
             </div>
         </div>
+
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <p><strong>Details:</strong>
                 {{ $todo->detail }}</p>
             </div>
         </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <p><strong>Erledigen bis:</strong>
+                {{ $todo->time }}</p>
+            </div>
+        </div>
+
     </div>
 @endsection
