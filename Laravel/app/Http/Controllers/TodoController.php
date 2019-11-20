@@ -40,7 +40,8 @@ class TodoController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'time' => 'required',  /* datail */
+            'detail' => 'required',
+            'time' => 'required',
         ]);
 
         Todo::create($request->all());
@@ -52,7 +53,7 @@ class TodoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Todo  $product
+     * @param  \App\Todo  $todo
      * @return \Illuminate\Http\Response
      */
     public function show(Todo $todo)
@@ -63,7 +64,7 @@ class TodoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Todo  $product
+     * @param  \App\Todo  $todo
      * @return \Illuminate\Http\Response
      */
     public function edit(Todo $todo)
@@ -75,14 +76,15 @@ class TodoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Todo  $product
+     * @param  \App\Todo  $todo
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Todo $todo)
     {
         $request->validate([
             'name' => 'required',
-            'time' => 'required',  /*detail*/
+            'detail' => 'required',
+            'time' => 'required',
         ]);
 
         $todo->update($request->all());
@@ -94,7 +96,7 @@ class TodoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Todo  $product
+     * @param  \App\Todo  $todo
      * @return \Illuminate\Http\Response
      */
     public function destroy(Todo $todo)

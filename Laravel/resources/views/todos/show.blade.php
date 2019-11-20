@@ -6,7 +6,7 @@
                 <h2> Detailansicht</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary mb-4" href="{{ route('todos.index') }}"> zurück</a>
+                <a class="btn btn-outline-primary mb-4" href="{{ route('todos.index') }}"><i class="fas fa-chevron-left"></i> zurück</a>
             </div>
         </div>
     </div>

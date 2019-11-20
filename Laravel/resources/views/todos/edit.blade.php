@@ -7,7 +7,7 @@
                 <h2>Todo Bearbeiten</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary mb-4" href="{{ route('todos.index') }}"> Back</a>
+                <a class="btn btn-outline-primary mb-4" href="{{ route('todos.index') }}"><i class="fas fa-chevron-left"></i> zurück</a>
             </div>
         </div>
     </div>
@@ -44,12 +44,12 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Erledigen bis:</strong>
-                    <textarea class="form-control" name="time" placeholder="TT.MM.JJJJ">{{ $todo->time }}</textarea>
+                    <textarea class="form-control" name="time" placeholder="JJJJ.MM.TT">{{ $todo->time }}</textarea>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              <button type="submit" class="btn btn-primary">Speichern</button>
+              <button type="submit" class="btn btn-outline-primary">Speichern</button>
             </div>
         </div>
 

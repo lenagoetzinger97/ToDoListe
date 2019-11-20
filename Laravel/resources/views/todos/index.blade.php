@@ -35,7 +35,7 @@
 
                     <a class="btn btn-outline-primary" href="{{ route('todos.show',$todo->id) }}">Details</a>
 
-                    <a class="btn btn-outline-primary" href="{{ route('todos.edit',$todo->id) }}">Bearbeiten</a>
+                    <a class="btn btn-outline-primary" href="{{ route('todos.edit',$todo->id) }}"><i class="far fa-edit"></i>Bearbeiten</a>
 
                     @csrf
                     @method('DELETE')

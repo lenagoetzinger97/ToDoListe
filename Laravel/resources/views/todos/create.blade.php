@@ -7,7 +7,7 @@
             <h2>Erstelle ein neues Todo</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary mb-4" href="{{ route('todos.index') }}"> Back</a>
+            <a class="btn btn-outline-primary mb-4" href="{{ route('todos.index') }}"> Zurück</a>
         </div>
     </div>
 </div>
@@ -45,12 +45,12 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Erledigen bis:</strong>
-                <input type="datetime" name="time" class="form-control" placeholder="TT.MM.JJJJ">
+                <input type="datetime" name="time" class="form-control" placeholder="JJJJ.MM.TT">
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Speichern</button>
+                <button type="submit" class="btn btn-outline-primary">Speichern</button>
         </div>
 
     </div>
