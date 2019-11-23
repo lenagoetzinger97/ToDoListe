@@ -14,7 +14,7 @@
 
     @if ($errors->any())
         <div class="alert alert-danger">
-            <strong>Ups!</strong> Die ist bei der Eingabe ein Fehler unterlaufen.<br><br>
+            <strong>Ups!</strong> Dir ist bei der Eingabe ein Fehler unterlaufen.<br><br>
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>

@@ -1,6 +1,7 @@
 @extends('todos.layout')
 
 @section('content')
+<div class ="container">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left my-4">
@@ -22,7 +23,7 @@
         <tr>
             <!--th>Nr.</th-->
             <th>Aufgabe</th>
-            <th width="300px">Bis</th>
+            <th width="300px">Fälligkeitsdatum</th>
             <th width="300px">Aktion</th>
         </tr>
         @foreach ($todos as $todo)
@@ -35,13 +36,12 @@
 
                     <a class="btn btn-outline-primary" href="{{ route('todos.show',$todo->id) }}">Details</a>
 
-                    <a class="btn btn-outline-primary" href="{{ route('todos.edit',$todo->id) }}"><i class="far fa-edit"></i>Bearbeiten</a>
+                    <a class="btn btn-outline-primary" href="{{ route('todos.edit',$todo->id) }}"><i class="far fa-edit"></i> Bearbeiten</a>
 
                     @csrf
                     @method('DELETE')
 
                     <button class="btn"><i class="fa fa-trash"></i></button>
-                    <!--button type="submit" class="btn btn-danger">Löschen</button-->
 
                     <input type="checkbox" value=1 id="foo" name="foo">
 
@@ -50,7 +50,7 @@
         </tr>
         @endforeach
     </table>
-
+</div>
     {!! $todos->links() !!}
 
 @endsection
