@@ -1,5 +1,6 @@
 @extends('todos.layout')
 @section('content')
+<div class="container">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left my-4">
@@ -10,28 +11,16 @@
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <p><strong>Aufgabe:</strong>
-                {{ $todo->name }}</p>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <p><strong>Details:</strong>
-                {{ $todo->detail }}</p>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <p><strong>Erledigen bis:</strong>
-                {{ $todo->time }}</p>
-            </div>
-        </div>
-
+    <div class="card">
+      <div class="card-body">
+         <h5 class="card-title">Was ist zu tun?</h5>
+         <p><strong>Aufgabe:</strong>
+         {{ $todo->name }}</p>
+         <p><strong>Details:</strong>
+         {{ $todo->detail }}</p>
+         <p><strong>Erledigen bis:</strong>
+         {{ $todo->time }}</p>
+      </div>
     </div>
+</div>
 @endsection

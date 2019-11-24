@@ -47,7 +47,7 @@ class TodoController extends Controller
         Todo::create($request->all());
 
         return redirect()->route('todos.index')
-                        ->with('success','Todo created successfully.');
+                        ->with('success','Todo erfolgreich erstellt.');
     }
 
     /**
@@ -90,7 +90,7 @@ class TodoController extends Controller
         $todo->update($request->all());
 
         return redirect()->route('todos.index')
-                        ->with('success','Todo updated successfully');
+                        ->with('success','Todo erfolgreich geändert');
     }
 
     /**
@@ -104,6 +104,6 @@ class TodoController extends Controller
         $todo->delete();
 
         return redirect()->route('todos.index')
-                        ->with('success','Todo deleted successfully');
+                        ->with('success','Todo erfolgreich gelöscht');
     }
 }

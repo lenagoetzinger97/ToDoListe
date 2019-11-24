@@ -1,6 +1,7 @@
 @extends('todos.layout')
 
 @section('content')
+<div class="container">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left my-4">
@@ -54,4 +55,6 @@
         </div>
 
     </form>
+
+</div>    
 @endsection
